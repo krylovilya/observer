@@ -95,3 +95,8 @@ class Observer:
         """
         self.status = subject.get()
         print(text_format.format(observer_name=self.name, subject_name=subject.name, status=self.status))
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("test.txt")
